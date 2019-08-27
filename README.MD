@@ -2,8 +2,10 @@ Contains all vagrant env used
 https://www.zhihu.com/question/32324376
 
 
-====Basic set up====
-Software needed,
+# Basic set up
+
+* Software needed,
+
 install Vagrant and Virtual box on local machine
 Option1, Images needed,
 download different base boxes from atlas or other places
@@ -17,20 +19,32 @@ or
 vigrant box add "official-box-name-defined-in-atlas"
 Vigrant box list
 
-====spin up a env====
+# spin up a env
+
+```shell
 mkdir path-to-instance-of-box
 cd path-to-instance-of-box
 vagrant init box-local-unique-name
 vagrant up
+```
 
 https://segmentfault.com/a/1190000005640631
 follow the instruction to rebuild the env.
 
 
-=====login vm===
+#  login vm
+
 ssh to the ip / port which can be found from spin up log
 default user and password , vagrant
+to find out current vagrant box private key
+
+```shell
+vagrant ssh-config
+```
 
 
+# clean the env
 
-
+```shell
+vagrant box list
+```
