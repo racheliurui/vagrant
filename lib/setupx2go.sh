@@ -1,3 +1,5 @@
+# TODO,
+# Issue found, manually execute works, run from vagrant file has issue. (security)
 # install x2go
 # https://draculaservers.com/tutorials/install-x2go-ubuntu-remote-desktop/
 sudo apt-get install software-properties-common

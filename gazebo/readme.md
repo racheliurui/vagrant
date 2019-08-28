@@ -32,6 +32,11 @@ vagrant ssh -- -L 8080:localhost:8080
 
 # Clean up Env
 
+```bash
+# Reprovision
+vagrant reload --provision
+```
+
 ```shell
 cd ~/github/vagrant/gazebo
 vagrant halt
